@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function pularLinha() {
+			document.write("<br>");
+			document.write("<br>");
+		}
+
+		function msg(mensagem) {
+			document.write(mensagem);
+			pularLinha();
+		}
+
+		// var numeroPensado = Math.round(Math.random() * 20);
+		// console.log(numeroPensado);
+
+		// var chute = parseInt(prompt("Digite um número"));
+
+		// if (chute == numeroPensado) {
+		// 	msg("Parabéns, você acertou!");
+		// } else {
+		// 	msg("Não foi desta vez. O número era " + numeroPensado);
+		// }
+
+		function adivinha() {
+			var sorteio = parseInt(prompt("Escreva um valor para n, lembrando iremos sortear de 0 à n"));
+
+			var numSorteado = Math.round(Math.random() * sorteio);
+			console.log(numSorteado);
+
+			var chute = parseInt(prompt("Agora pense no número em que sortiamos"));
+
+		  if (chute == numSorteado) {
+			 	msg("Parabéns, você acertou!");
+			 } else {
+			 	msg("Não foi desta vez. O número era " + numSorteado);
+			 }
+		}
+
+		adivinha();
+		
+	</script>	
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap4</title>
+</head>
+<body>
+
+	<script>
+		function pularLinha() {
+			document.write("<br>");
+			document.write("<br>");
+		}
+
+		function msg(mensagem) {
+			document.write(mensagem);
+			pularLinha();
+		}
+
+    var ano = 2016;
+    msg("Flávio tem " + (ano - 1977) + " anos");
+    msg("Joaquim tem " + (ano - 1996) + " anos");
+
+    ano = 2017;
+    msg("Barney tem " + (ano - 1976) + " anos");
+
+    var idadeFlavio = 39;
+    var idadeJoaquim = 20;
+    var idadeBarney = 41;
+
+    var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+    msg("A média das idades é " + Math.round(media));
+
+    var nome = "Flávio";
+    msg("A idade de " + nome + " é " + idadeFlavio);
+
+
+    var geracoes = (2020 - 1500) / 28;
+    msg("<big>No Brasil, existem </big>" + Math.round(geracoes) + " gerações");
+
+
+	</script>
+</body>
+</html>

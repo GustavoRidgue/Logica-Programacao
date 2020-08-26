@@ -1,0 +1,72 @@
+header, body {
+	font-family: Arial, helvetica, sans-serif;
+	background-color: #FEFEFE;
+  /*padding-top: .7em;*/
+	line-height: 1.4em;
+}
+
+header {
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	padding: .7em 0;
+}
+
+.main-title {
+	font-weight: bold;
+	font-size: 2.5em;
+	padding: .4em;
+}
+
+.description {
+	font-size: 1.3em;
+}
+
+.theme-title {
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	width: 200px;
+	height: 150px;
+	background-color: lightgreen;
+	float: left;
+	/*display: inline;*/
+	/*padding-top: 50px*/
+}
+
+h2 {
+		padding: 50% 50%;
+
+}
+
+.database {
+	background-color: rgb(0,255,255);
+	/*display: inline-block;*/
+}
+
+.database ul {
+	width: 500px;
+	height: 150px;
+	display: inline-block;
+
+}
+
+.database ul li {
+	margin: 1em auto;
+}
+
+.web-front {
+	background-color: #F0F0F0;
+	/*display: inline-block;*/
+}
+.javascript {
+	background-color: #EBECEA;
+	/*display: inline-block;*/
+}
+
+.java {
+	background-color: #DDD4CB;
+	/*display: inline-block;*/
+}
+
+/**/

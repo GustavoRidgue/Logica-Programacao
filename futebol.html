@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function pularLinha() {
+			document.write("<br>");
+			document.write("<br>");
+		}
+
+		function msg(mensagem) {
+			document.write(mensagem);
+			pularLinha();
+		}
+
+		// todo valor de prompt é string. o parseInt Tira as aspas, convertendo 
+		// o valor para numero, possibilitando fazer a adição
+
+		
+		function feedback() {
+			var pergunta = prompt("Você quer saber o feedback do seu time em relação ao ano passado? Responda com 'sim' ou 'nao'");	
+
+			if (pergunta == 'sim') {
+				var jogosPass = parseInt(prompt("Digite quantos jogos seu time jogou ano passado"));
+				var pontosPass = parseInt(prompt("Digite a quantidade de pontos do seu time no ano passado"));
+				var mediaPass = pontosPass/jogosPass;
+
+				var jogos = parseInt(prompt("Digite quantos jogos seu time jogou"));
+				var pontos = parseInt(prompt("Digite a quantidade de pontos do seu time neste ano"));
+				var media = pontos/jogos;
+
+				if (mediaPass > media) {
+					msg("Seu time no ano passado estava melhor do que atualmente, pois fazia " + mediaPass + 
+						  " pontos por jogo, e atualmente faz " + media + " por jogo.")
+				}
+
+				if (mediaPass < media) {
+					msg("Seu time no ano passado estava pior do que atualmente, pois fazia " + mediaPass + 
+						  " pontos por jogo, e atualmente faz " + media + " por jogo.")
+				}
+
+				if (mediaPass == media) {
+					msg("Seu time no ano passado estava igual atualmente, pois fazia " + mediaPass + 
+						  " pontos por jogo, e atualmente faz " + media + " por jogo.")
+				}
+			}
+
+			if (pergunta == 'nao') {
+				msg("Ok, obrigado pela atenção")
+			}
+		}
+		
+		feedback();
+
+		var anoCopa = 1930;
+		var dataLimite = parseInt(prompt("Digite uma data limite"))
+
+		while (anoCopa <= dataLimite) {
+			msg("Teve copa em " + anoCopa);
+			anoCopa = anoCopa + 4;
+		}
+
+	</script>	
+</body>
+</html>

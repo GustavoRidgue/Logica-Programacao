@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap4</title>
+</head>
+<body>
+
+	<form name="formulario" method="post" action="#">
+		<label for="resultado">Quanto é 67 * 2?</label>
+		<input type="number" id="resultado" name="insiraresultado" onclick="return validar_conta() ">
+
+		<label for="resultado">Quanto é 43 + 23?</label>
+		<input type="number" id="resultado" name="insiraresultado2" onclick="return validar_conta()">
+
+		<label for="resultado">Quanto é 87 - 48?</label>
+		<input type="number" id="resultado" name="insiraresultado3" onclick="return validar_conta()">
+
+		<input type="submit" value="Enviar" name="enviar" onclick="return validar_conta()" class="entrar">
+	</form>
+
+	<script>
+    function validar_conta() {
+    	var result = formulario.insiraresultado.value;
+    	var result2 = formulario.insiraresultado2.value;
+    	var result3 = formulario.insiraresultado3.value;
+
+	    if (result == 134) {
+	    	alert("Acerto mizeravi");
+	    	return true;
+	    }
+
+	    if (result2 == 66) {
+	    	alert("Acerto mizeravi");
+	    	return true;
+	    }
+	    
+	    if (result3 == 39) {
+	    	alert("Acerto mizeravi");
+	    	return true;
+	    }
+	    else {
+	    	alert("Errou besta kkkkkkk");
+	    	formulario.insiraresultado.focus();
+	    	return false;
+	    }
+    }
+
+	</script>
+</body>
+</html>
+</body>
+</html>
