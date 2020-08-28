@@ -29,21 +29,28 @@
 		// }
 
 		function adivinha() {
+			var tentativas = 3;
 			var sorteio = parseInt(prompt("Escreva um valor para n, lembrando iremos sortear de 0 à n"));
-
 			var numSorteado = Math.round(Math.random() * sorteio);
 			console.log(numSorteado);
 
+			while(tentativas >= 1) {
 			var chute = parseInt(prompt("Agora pense no número em que sortiamos"));
 
 		  if (chute == numSorteado) {
-			 	msg("Parabéns, você acertou!");
-			 } else {
-			 	msg("Não foi desta vez. O número era " + numSorteado);
-			 }
+			 	alert("Parabéns, você acertou!");
+			 	break;
+			} 
+			else {
+			 	tentativas--;
+			 	alert("Não foi desta vez. Tentativas restantes: " + tentativas);
+			}
 		}
+		alert("O número pensado era " + numSorteado);
+	}
 
-		adivinha();
+	adivinha();
+		
 		
 	</script>	
 </body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function pularLinha() {
+			document.write("<br>");
+			document.write("<br>");
+		}
+
+		function msg(mensagem) {
+			document.write(mensagem);
+			pularLinha();
+		}
+
+		msg("Tabuada do 7:")
+		for (var multiplicador = 1;multiplicador <= 10; multiplicador++) {
+			msg("7 x " + multiplicador + " = " + 7 * multiplicador);
+		}
+
+		msg("fim");;
+
+		var familiares = parseInt(prompt("Digite a quantidade de familiares"));
+		var idades = 0;
+		var totalIdade = 0;
+
+		for (var i = 1; i <= familiares; i++) {
+			idade = parseInt(prompt("Digite a idade do familiar:"));
+			totalIdade = totalIdade + idade;
+		}
+
+		var media = totalIdade/familiares;
+		msg(media);
+
+
+	</script>
+</body>
+</html>
